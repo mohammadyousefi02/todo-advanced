@@ -16,7 +16,7 @@ function Header() {
     dispatch(filterTodosBySearch())
   }
   return (
-    <header className='h-12 bg-[#6200EA] flex justify-between p-1 text-white'>
+    <header className='h-16 bg-[#6200EA] flex justify-between p-1 text-white'>
         <div className="flex gap-1 items-center">
             <TbListNumbers className="text-2xl"/>
             <h1 className="font-bold">My To-Do Tasks</h1>

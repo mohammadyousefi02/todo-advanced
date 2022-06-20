@@ -4,7 +4,6 @@ import React from "react";
 
 
 export default function TableBtn({Icon,color="#DA3544",hoverColor="#bb2d3b",...prop}) {
-    // const btnClass = 
 
 
     return (
