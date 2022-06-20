@@ -1,0 +1,74 @@
+.fadeIn-anim{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.fadeOut-anim{
+    animation-name: fadeOut;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+.fateIn-anim-rtl{
+    animation-name: fadeIn-rtl;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+.fateOut-anim-ltr{
+    animation-name: fadeOut-ltr;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: 100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+    
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    bottom: 0;
+  }
+  to {
+    opacity: 0;
+    bottom: 100px;
+  }
+}
+
+@keyframes fadeIn-rtl {
+    from {
+        opacity: 0;
+        left: 100px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+    
+}
+
+@keyframes  fadeOut-ltr {
+    from {
+        opacity: 1;
+        left: 0;
+    }
+    to {
+        opacity: 0;
+        left: 100px;
+    }
+}
