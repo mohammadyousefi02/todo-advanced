@@ -21,12 +21,12 @@ function Header() {
             <TbListNumbers className="text-2xl"/>
             <h1 className="font-bold">My To-Do Tasks</h1>
         </div>
-        <div className="flex gap-2 items-center px-1">
-            <input placeholder="Search" className="p-1 text-gray-600 rounded text-[14px] placeholder:text-gray-500 border focus:border-[#86b7fe] outline-0" 
+        <div className="flex gap-4 items-center px-1">
+            <input placeholder="Search" className="p-2 px-6 text-gray-600 rounded text-[14px] placeholder:text-gray-500 border focus:border-[#86b7fe] outline-0" 
             value={filterValue}
             onChange={filterTodosHandler}/>
-            <FaFilter className="text-[18px]" onClick={()=>dispatch(showFilterMenu())}/>
-            <BsPlusSquareFill className="text-[18px]" onClick={()=>dispatch(showTaskModal())}/>
+            <FaFilter className="text-[24px]" onClick={()=>dispatch(showFilterMenu())}/>
+            <BsPlusSquareFill className="text-[24px]" onClick={()=>dispatch(showTaskModal())}/>
         </div>
     </header>
   )

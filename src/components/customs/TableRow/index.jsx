@@ -37,20 +37,20 @@ export default function TableRow({task,priority,status,deadline,detail,id}) {
     const genStatusBgColor = () => {
         switch(status){
             case "todo":
-                return "#DA3544"
+                return "red"
             case "doing":
-                return "#FFC107"
+                return "yellow"
             default:
-                return "#198754"
+                return "green"
         }
     }
 
     const getPriorityBgColor = () => {
         switch(priority){
             case "high":
-                return "#DA3544"
+                return "red"
             case "medium":
-                return "#FFC107"
+                return "yellow"
             default:
                 return ""
         }
@@ -64,8 +64,8 @@ export default function TableRow({task,priority,status,deadline,detail,id}) {
         <td><span className="rounded-full py-1 px-3 border border-[#0DCAF0]">{deadline.toString()}</span></td>
         <td className="text-white flex gap-1 justify-center items-center">
             <TableBtn Icon={MdDelete} onClick={deleteHandler}/>
-            <TableBtn Icon={MdModeEdit} color={"#0d6efd"} hoverColor={"#0b5ed7"} onClick={editTodoHandler}/>
-            <TableBtn Icon={AiFillEye}  color={"#6c757d"} hoverColor={"#5c636a"} onClick={showTaskModalHandler}/>
+            <TableBtn Icon={MdModeEdit} color={"blue"} onClick={editTodoHandler}/>
+            <TableBtn Icon={AiFillEye}  color={"gray"} onClick={showTaskModalHandler}/>
         </td>
     </tr>
     )
